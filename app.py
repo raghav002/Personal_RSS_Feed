@@ -2,6 +2,11 @@ from flask import Flask, render_template, request
 import feedparser 
 
 app = Flask(__name__)
+
+# TODO - separate feeds up by sources first
+# TODO - see if you can implement 'top hits' for each source on a separate page
+# TODO - maybe have each source have an optional dedicated page for it/just have the
+#        actual source linked as well
  
 # Needed: RSS feed URLs
 # Have to specify URLs of an RSS feed to parse with feedparser 
