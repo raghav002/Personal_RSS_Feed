@@ -7,10 +7,13 @@ app = Flask(__name__)
 # Have to specify URLs of an RSS feed to parse with feedparser 
 # Key note: the URLs themselves has to have some sort of rss specification. Can't just 
 # put in a url and expect it to work 
+# Note : Anything on 'substack' automatically has rss enabled, just tack on /feed to the
+# end
 RSS_FEEDS = {
      'Hackernews': 'https://news.ycombinator.com/rss',
      'DeepMind': 'https://deepmind.com/blog/feed/basic/',
-     'PyTorch': 'https://pytorch.org/feed'
+     'PyTorch': 'https://pytorch.org/feed',
+     'TheZvi': 'https://thezvi.substack.com/feed'
 }
  
 # Default route
